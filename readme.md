@@ -1,22 +1,25 @@
 ### 使用LayoutAnimationController为RecyclerView添加动画
 
-[TOC]
+@author:莫川
 
 #### 一、前言
-为RecyclerView的Item添加动画有很多中方案，比如通过[设置setItemAnimator来实现](https://github.com/wasabeef/recyclerview-animators)或者是[通过遍历RecyclerView中的子View，然后分别对子View做动画](https://github.com/willowtreeapps/spruce-android)。今天介绍一种通过LayoutAnimation的方式，对RecyclerView的Item做动画。
+为RecyclerView的Item添加动画有很多中方案，比如通过[设置setItemAnimator来实现](https://github.com/wasabeef/recyclerview-animators)或者是[通过遍历RecyclerView中的子View，然后分别对子View做动画](https://github.com/willowtreeapps/spruce-android)。今天介绍一种更加简单的方式：通过LayoutAnimationController的方式，对RecyclerView的Item做动画。
 
 #### 二、效果以及源码
 
-Github源码：[]()
+先看效果：首先是对LinearLayoutManager的RecyclerView。
 
-- 1.使用LayoutAnimationController
-<br>
+- 1.使用LayoutAnimationController的8种动画的播放效果
+
 ![img](./pics/layout.gif)
-<br>
-- 2.使用GridLayoutAnimationController
-<br>
+
+
+- 2.使用GridLayoutAnimationController的8种动画的播放效果
+
 ![img](./pics/grid_layout.gif)
-<br>
+
+##### Github源码：[https://github.com/nuptboyzhb/RecyclerViewAnimation](https://github.com/nuptboyzhb/RecyclerViewAnimation)
+
 #### 三、实现方案
 
 ##### (1)LayoutAnimationController
@@ -283,7 +286,7 @@ public class StaggeredGridRecyclerView extends RecyclerView {
 }
 ```
 
-更多动画效果，请参见Github源码：[]()
+更多动画效果，请参见Github源码：[https://github.com/nuptboyzhb/RecyclerViewAnimation](https://github.com/nuptboyzhb/RecyclerViewAnimation)
 
 #### 四、总结
 通过LayoutAnimationController或者GridLayoutAnimationController来实现RecyclerView的动画，非常简单，而且效果很好。该方式不仅可以应用于RecyclerView，而且还适用于ListView、LinearLayout、GridView等ViewGroup。比如，如下是作用在一个LinearLayout的效果。
