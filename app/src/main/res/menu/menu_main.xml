@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.github.nuptboyzhb.myapplication.MainActivity">
+
+    <item
+        android:id="@+id/action_left"
+        android:orderInCategory="100"
+        android:title="Left"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_right"
+        android:orderInCategory="100"
+        android:title="Right"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_bottom"
+        android:orderInCategory="100"
+        android:title="Bottom"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_top"
+        android:orderInCategory="100"
+        android:title="Top"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_scale_enlarge"
+        android:orderInCategory="100"
+        android:title="Scale Enlarge"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_scale_narrow"
+        android:orderInCategory="100"
+        android:title="Scale Narrow"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_alpha"
+        android:orderInCategory="100"
+        android:title="Alpha"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_rotation"
+        android:orderInCategory="100"
+        android:title="Rotation"
+        app:showAsAction="never" />
+
+</menu>
